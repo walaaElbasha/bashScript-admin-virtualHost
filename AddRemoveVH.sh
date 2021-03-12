@@ -26,7 +26,8 @@ read -p "Enter DocumentRoot Path -like /var/Dir_name/host.com___" DIR
 		checkValidaton $SERV
 		RET=$?
 			if [ $RET -eq 1 ]; then
-				
+			touch "/etc/apache2/sites-available/$SERV.conf"
+			echo "Config file successfully created !"
 				create_vh $DIR $SERV
 			fi
 		fi	
