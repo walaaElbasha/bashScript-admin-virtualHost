@@ -18,6 +18,16 @@ menu.sh
 _________
 	function displayMenu
 	     -displays menu options
+	     1-Install Apache2 Web Server
+	     2-Remove Apache2 Web Server
+	     3-Display All Available/Enabled virtual hosts
+	     4-Add a new virtual host
+	     5-Remove a virtual host
+	     6-Enable a virtual host
+	     7-Disable a virtual host
+	     8-Enable authontication for a Vhost
+	     9-Disable authontication for a Vhost
+	     10-Quit
 	function runMenu
 	     -controls menu operations
 	     -at every menu option it calls a function that exists in other scripts
