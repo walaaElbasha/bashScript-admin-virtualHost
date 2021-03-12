@@ -22,7 +22,7 @@ if [ $(dpkg --get-selections | grep apache2 | wc -l ) -ne  0 ]; then
 	echo "Are you sure you want to uninstall Apache2?[y/n]"
 	read CH
 	case ${CH} in
-	y")
+	"y")
 	echo "Removing apache2!"
 	##stopping the server
 	sudo service apache2 stop
