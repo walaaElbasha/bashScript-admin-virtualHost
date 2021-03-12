@@ -49,8 +49,6 @@ fi
 function checkValidaton {
 confg=${1}   
 if [ ! -f "/etc/apache2/sites-available/$confg.conf" ]; then 
-	touch "/etc/apache2/sites-available/$confg.conf"
-	echo "Config file successfully created !"
 	return 1
 else
 	echo "Sorry, Duplicate name couldnt create config file !"
